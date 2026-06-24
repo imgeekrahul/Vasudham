@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 🌾 VasuDham — React Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-ready Create React App (CRA) website for VasuDham flour brand.
 
-## Available Scripts
+## 🚀 Getting Started
 
-In the project directory, you can run:
+```bash
+npm install
+npm start        # Dev server at http://localhost:3000
+npm run build    # Production build → /build
+```
 
-### `npm start`
+## 🗂 Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+vasudham/
+├── public/
+│   └── index.html               ← HTML shell with root div
+├── src/
+│   ├── index.js                 ← ReactDOM.render entry point
+│   ├── App.js                   ← Root component, page router
+│   ├── App.css                  ← Global design tokens & utilities
+│   ├── pages/
+│   │   ├── HomePage.jsx         ← Assembles all home sections
+│   │   ├── GalleryPage.jsx      ← Filterable gallery + lightbox
+│   │   ├── GalleryPage.css
+│   │   ├── ContactPage.jsx      ← Enquiry form + branch cards
+│   │   └── ContactPage.css
+│   └── components/
+│       ├── Navbar.jsx           ← Sticky nav, scroll-glass effect
+│       ├── Navbar.css
+│       ├── Footer.jsx           ← 4-column footer
+│       ├── Footer.css
+│       └── home/
+│           ├── Hero.jsx         ← Fullscreen hero with stats
+│           ├── Hero.css
+│           ├── Features.jsx     ← 6 feature cards
+│           ├── Features.css
+│           ├── Products.jsx     ← Product showcase
+│           ├── Products.css
+│           ├── Branches.jsx     ← 3 city branches
+│           ├── Branches.css
+│           ├── Testimonials.jsx ← Customer reviews
+│           ├── Testimonials.css
+│           ├── CTABanner.jsx    ← Call-to-action section
+│           └── CTABanner.css
+└── package.json
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📍 Branch Locations
+- Ranchi, Jharkhand
+- Chattarpur, New Delhi
+- Basavanagara, Bangalore
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📞 **+91 79790 64070**

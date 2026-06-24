@@ -1,0 +1,140 @@
+.branches {
+  padding: 6rem 0;
+  background: var(--cream);
+}
+
+.branches__header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.branches__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.branches__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.branches__card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid rgba(200, 146, 42, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branches__card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.branches__img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.branches__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.branches__card:hover .branches__img {
+  transform: scale(1.06);
+}
+
+.branches__img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(30,18,8,0.6) 0%, transparent 60%);
+}
+
+.branches__city-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.branches__city {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.branches__state {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.branches__body {
+  padding: 1.25rem 1.5rem;
+}
+
+.branches__address {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.branches__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branches__map-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.branches__map-btn:hover {
+  color: var(--brown-dark);
+}
+
+.branches__contact-btn {
+  background: var(--gold-pale);
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gold);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  transition: all 0.2s;
+  border: 1px solid rgba(200, 146, 42, 0.2);
+}
+
+.branches__contact-btn:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+@media (max-width: 900px) {
+  .branches__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .branches__grid { grid-template-columns: 1fr; }
+  .branches { padding: 4rem 0; }
+}
