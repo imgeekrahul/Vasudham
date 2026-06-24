@@ -14,9 +14,9 @@ export default function Footer({ navigate }) {
             Crafted from the finest wheat grains for your family's health.
           </p>
           <div className="footer__social">
-            <a href="#" aria-label="Facebook" className="footer__social-icon">f</a>
-            <a href="#" aria-label="Instagram" className="footer__social-icon">in</a>
-            <a href="#" aria-label="YouTube" className="footer__social-icon">▶</a>
+            <a href="https://facebook.com" aria-label="Facebook" className="footer__social-icon">f</a>
+            <a href="https://instagram.com" aria-label="Instagram" className="footer__social-icon">in</a>
+            <a href="https://twitter.com" aria-label="YouTube" className="footer__social-icon">▶</a>
           </div>
         </div>
 
